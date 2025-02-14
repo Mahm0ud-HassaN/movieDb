@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --mainBgColor: #121212;
+  --primaryColor: #E50914;
+  --secondaryColor: #B3B3B3;
+  --thirdColor: #fff;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--mainBgColor);
+  color: var(--mainColor);
+}
+
+.light {
+  --mainBgColor: #f8f9fa;
+  --mainColor: #212529;
+}
+
+.dark {
+  --mainBgColor: #121212;
+  --mainColor: #e4e4e4;
+}
+
+.home-container,
+.movie-details-container {
+  background-color: var(--mainBgColor);
+  color: var(--mainColor);
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bebas Neue", sans-serif;
+  color: var(--primaryColor);
+}
+a, button {
+  background-color: var(--primaryColor);
+  color: var(--thirdColor);
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+a:hover, button:hover  {
+  background-color: #B20710 !important;
+  color: var(--thirdColor) !important; /* Darker red for hover */
+ 
+}
+p{
+  color: var(--secondaryColor);
+}
+
+/* theme  */
+.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: var(--mainBgColor);
+  color: cyan;
+}

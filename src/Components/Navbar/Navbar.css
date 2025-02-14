@@ -1,0 +1,42 @@
+/* Navbar.css */
+
+/* Glass effect for navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 4px 6px rgba(253, 175, 175, 0.1); /* Optional: Subtle shadow */
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .navbar .navbar-brand {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: white;
+  }
+  
+  .navbar .nav-link {
+    color: white !important;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar .nav-link:hover {
+    color: white !important;
+  }
+  
+  .btn-lang img,
+  .btn-theme img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .btn-lang:hover img,
+  .btn-theme:hover img {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  

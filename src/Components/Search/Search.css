@@ -1,0 +1,42 @@
+/* Custom Pagination Styles */
+.pagination {
+    margin-top: 20px;
+  }
+  
+  .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .page-link {
+    color: #007bff;
+  }
+  
+  .page-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Search Bar Styles */
+  .form-control, .form-select {
+    border-radius: 20px;
+  }
+  
+  /* Card Overlay Styles */
+  .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .movie-card:hover .card-overlay {
+    opacity: 1;
+  }

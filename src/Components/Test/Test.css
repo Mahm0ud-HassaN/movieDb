@@ -1,0 +1,81 @@
+/* Navbar Container */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  /* Brand/Logo */
+  .navbar-brand a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navbar Links */
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    margin-left: 20px;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #0dcaf0; /* Hover color */
+  }
+  
+  /* Mobile Menu Toggle Button */
+  .navbar-toggle {
+    display: none; /* Hide by default on larger screens */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Mobile Menu Styles */
+  @media (max-width: 768px) {
+    .navbar-toggle {
+      display: block; /* Show toggle button on mobile */
+    }
+  
+    .navbar-links {
+      display: none; /* Hide links by default on mobile */
+      flex-direction: column;
+      width: 100%;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .navbar-links.active {
+      display: flex; /* Show links when menu is toggled */
+    }
+  
+    .navbar-links li {
+      margin: 10px 0;
+      text-align: center;
+    }
+  }
